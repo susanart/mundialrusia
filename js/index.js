@@ -37,6 +37,6 @@ async function leerJSON(url) {
   }
   mostrar();
 
-  $("#selh3").click(function(event){
-    $("#contenedor").load('selecciones/colombia.html');
-  });
+  // $("#selh3").click(function(event){
+  //   $("#contenedor").load('selecciones/colombia.html');
+  // });

@@ -1,5 +1,6 @@
-{
-    "partidos":[{
+
+[   
+    {
     
     "fecha":"21/06/2018",
     "equipo1":"Colombia",
@@ -35,6 +36,3 @@
     "equipo2":"Polonia"
     }
 ]
-}
-
-    
