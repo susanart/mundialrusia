@@ -1,18 +1,3 @@
-// $("#selh3").click(function(event){
-//     $("#contenedor").load('selecciones/colombia.html');
-// });
-
-// var part="";
-// $.getJSON('partidos.json',function(datos){
-//     $("#contenido").html('');
-//     $.each(datos["partidos"],function(idx,partido){
-//         $("#contenido").append("<tr>"+
-//         "<td>" + partido["fecha"]+"</td><td>"+partido["equipo1"]+"</td><td>"
-//         +partido.equipo2+"</td>"+"</tr>");
-//     });
-// });
-
-
 async function leerJSON(url) {
     try {
       let response = await fetch(url);
@@ -33,6 +18,8 @@ async function leerJSON(url) {
                 <td>${partidos1.fecha}</td>
                 <td>${partidos1.equipo1}</td>
                 <td>${partidos1.equipo2}</td>
+                
+                
               </tr>
             `;
         });
@@ -48,7 +35,8 @@ async function leerJSON(url) {
     }
     return msj;
   }
-  
-  
   mostrar();
-  
+
+  $("#selh3").click(function(event){
+    $("#contenedor").load('selecciones/colombia.html');
+  });
